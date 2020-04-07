@@ -1,4 +1,4 @@
-package algo_learn;
+package array;
 
 public class Array {
     // 整形数组 data 保存数据
@@ -134,5 +134,19 @@ public class Array {
             System.out.printf("%d \t", this.data[i]);
         }
         System.out.println();
+    }
+
+
+    
+    public static void main(String[] args) {
+        Array a =  new Array(10);
+        a.insert(0, 3);
+        a.insert(0, 2);
+        a.insert(0, 1);
+        a.insert(0, 0);
+        a.printAll();
+       
+        a.insertArray(new int[]{1,2,3,4,5,5});
+        a.printAll();
     }
 }
