@@ -273,19 +273,19 @@ public class CircularLinkedList {
         int [] data = {1, 2, 3, 4, 5};
         CircularLinkedList cl = new CircularLinkedList();
         
-        System.out.println("Test SingleLinkedList.insertToTail");
+        System.out.println("Test CircularLinkedList.insertToTail");
         for (int i = 0; i < data.length; i++) {
             cl.insertToTail(new Node(data[i], null));
         }
         cl.printAll();
 
-        System.out.println("Test SingleLinkedList.insertToHead");
+        System.out.println("Test CircularLinkedList.insertToHead");
         for (int i = 0; i < data.length; i++) {
             cl.insertToHead(new Node(data[i], null));
         }
         cl.printAll();
 
-        System.out.println("Test SingleLinkedList.findByIndex");
+        System.out.println("Test CircularLinkedList.findByIndex");
         Node node = cl.findByIndex(1);
         if (node != null) {
             System.out.println(node.data);
@@ -293,7 +293,7 @@ public class CircularLinkedList {
             System.out.println("Not found");
         }
         
-        System.out.println("Test SingleLinkedList.findByValue");
+        System.out.println("Test CircularLinkedList.findByValue");
         node = cl.findByValue(4);
         if (node != null) {
             System.out.println(node.data);
@@ -301,31 +301,31 @@ public class CircularLinkedList {
             System.out.println("Not found");
         }
 
-        System.out.println("Test SingleLinkedList.deleteByNode");
+        System.out.println("Test CircularLinkedList.deleteByNode");
         cl.deleteByNode(node);
         node = null;
         cl.printAll();
 
-        System.out.println("Test SingleLinkedList.deleteByValue");
+        System.out.println("Test CircularLinkedList.deleteByValue");
         cl.deleteByValue(5);
         cl.printAll();
 
-        System.out.println("Test SingleLinkedList.findByValue");
+        System.out.println("Test CircularLinkedList.findByValue");
         node = cl.findByValue(5);
         System.out.println(node.data);
 
         if (node == null) {
             return;
         }
-        System.out.println("Test SingleLinkedList.insertBefore");
+        System.out.println("Test CircularLinkedList.insertBefore");
         cl.insertBefore(node, new Node(10));
         cl.printAll();
 
-        System.out.println("Test SingleLinkedList.insertAfrer");
+        System.out.println("Test CircularLinkedList.insertAfrer");
         cl.insertAfter(node, new Node(12));
         cl.printAll();
 
-        System.out.println("Test SingleLinkedList.deleteByNode");
+        System.out.println("Test CircularLinkedList.deleteByNode");
         cl.deleteByNode(node);
         cl.printAll();
     }
