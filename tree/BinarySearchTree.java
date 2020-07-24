@@ -1,7 +1,7 @@
 package tree;
 
 /**
- * ToDo：考虑数据重复的情况
+ * 只考虑数据不重复的情况
  */
 public class BinarySearchTree {
     public Node tree;  //  树的根节点
@@ -172,7 +172,7 @@ public class BinarySearchTree {
     }
 
     /**
-     * 中序遍历来查看效果
+     * 中序遍历来查看树的情况
      * @param tree
      */
     public void inOrder(Node tree) {
