@@ -18,7 +18,20 @@ public class BinaryTree {
         }
     }
 
-    // 创建一个树（临时）
+    /**
+     * 创建一棵临时的树
+        +----------------+
+        |        1       |
+        |       + +      |
+        |      +   +     |
+        |     2     3    |
+        |    + +         |
+        |   +   +        |
+        |  4     5       |
+        |                |
+        +----------------+
+     * @return
+     */
     public Node createTreeTemp() {
         Node tree = new Node(1);
         tree.left = new Node(2);
