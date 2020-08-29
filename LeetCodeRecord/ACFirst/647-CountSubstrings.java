@@ -1,3 +1,5 @@
+package ACFirst;
+
 class CountSubstrings {
     public int countSubstrings(String s) {
         int sLen = s.length();

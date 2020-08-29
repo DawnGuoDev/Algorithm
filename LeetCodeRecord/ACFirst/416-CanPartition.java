@@ -1,3 +1,5 @@
+package ACFirst;
+
 class CanPartition {
     
     public boolean canPartition(int[] nums) {

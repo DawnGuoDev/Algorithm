@@ -1,3 +1,5 @@
+package ACFirst;
+
 class NumSquares {
     public int numSquares(int n) {
         int[] dp = new int[n + 1];

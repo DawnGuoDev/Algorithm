@@ -1,3 +1,5 @@
+package ACFirst;
+
 class IncreasingTriplet {
     public boolean increasingTriplet(int[] nums) {
         if (nums.length <= 2) {

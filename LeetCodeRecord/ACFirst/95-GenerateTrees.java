@@ -1,8 +1,7 @@
-import java.lang.reflect.Array;
+package ACFirst;
+
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.ListResourceBundle;
 
 class GenerateTrees {
     class TreeNode {

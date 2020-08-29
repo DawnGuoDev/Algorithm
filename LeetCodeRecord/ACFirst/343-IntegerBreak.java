@@ -1,3 +1,5 @@
+package ACFirst;
+
 class IntegerBreak {
     public int integerBreak(int n) {
         int[] dp = new int[n + 1];

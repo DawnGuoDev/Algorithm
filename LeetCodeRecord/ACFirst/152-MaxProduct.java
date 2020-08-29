@@ -1,3 +1,5 @@
+package ACFirst;
+
 class MaxProduct {
     public int maxProduct(int[] nums) {
         // dp 数组

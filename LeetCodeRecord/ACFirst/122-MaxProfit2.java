@@ -1,3 +1,5 @@
+package ACFirst;
+
 class MaxProfit2 {
     public int maxProfit(int[] prices) {
         int len = prices.length;

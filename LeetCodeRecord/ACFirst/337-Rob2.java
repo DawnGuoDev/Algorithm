@@ -1,3 +1,5 @@
+package ACFirst;
+
 class Rob2 {
     public int rob(TreeNode root) {
         int[] re = robMax(root);

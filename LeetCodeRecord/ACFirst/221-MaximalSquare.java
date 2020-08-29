@@ -1,3 +1,5 @@
+package ACFirst;
+
 class MaximalSquare {
     public int maximalSquare(char[][] matrix) {
         int row = matrix.length;

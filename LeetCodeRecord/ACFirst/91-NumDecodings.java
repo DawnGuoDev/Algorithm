@@ -1,3 +1,5 @@
+package ACFirst;
+
 class NumDecoding {
     public int numDecodings(String s) {
         int[] dp = new int[s.length() + 1];

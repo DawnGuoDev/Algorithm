@@ -1,3 +1,5 @@
+package ACFirst;
+
 class LongestPalindrome {
     public String longestPalindrome(String s) {
         int sLen = s.length();
