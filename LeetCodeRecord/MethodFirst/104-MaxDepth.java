@@ -1,5 +1,6 @@
 package MethodFirst;
 
+import java.util.LinkedList;
 import java.util.Queue;
 
 class MaxDepth {
@@ -28,7 +29,7 @@ class MaxDepth {
         if (root == null) {
             return 0;
         }
-
+        
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
         int depth = 0;
         queue.offer(root);
