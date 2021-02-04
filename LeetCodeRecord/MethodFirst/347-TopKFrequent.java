@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 
-public class TopKFrequent {
+class TopKFrequent {
     public int[] topKFrequent(int[] nums, int k) {
         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
         PriorityQueue<Integer> pq = new PriorityQueue<Integer>(new Comparator<Integer>(){
