@@ -25,7 +25,7 @@ class IsAnagram {
         }
 
         for (int i = 0; i < t.length(); i++) {
-            counts[s.charAt(i) - 'a']--;
+            counts[t.charAt(i) - 'a']--;
         }
 
         for (int i = 0; i < 26; i++) {
