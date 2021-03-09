@@ -19,7 +19,8 @@ class Flatten {
         while (curr != null) {
             if (curr.left != null) {
                 TreeNode pre = curr.left;
-
+                
+                // 找到 curr.right 的前驱节点
                 while (pre.right != null) {
                     pre = pre.right;
                 }
