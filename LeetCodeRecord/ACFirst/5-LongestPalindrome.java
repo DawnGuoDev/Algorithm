@@ -17,7 +17,7 @@ class LongestPalindrome {
         // 动态规划迭代
         int begin = 0;
         int subLen = 1;
-        for (int i = sLen - 1; i >= 0; i--) {
+        for (int i = sLen - 1; i >= 0; i--) { // 从字符串后面开始
             for (int j = i + 1; j <= sLen - 1; j++) {
                 if (s.charAt(i) == s.charAt(j)) {
                     if (j - i <= 2) {
