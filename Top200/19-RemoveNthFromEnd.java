@@ -1,6 +1,6 @@
 package Top200;
 
-class DeleteNode {
+class RemoveNthFromEnd {
     class ListNode {
         int val;
         ListNode next;
@@ -17,19 +17,24 @@ class DeleteNode {
         }
     }
 
-    public ListNode deleteNode(ListNode head, int val) {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode dummy = new ListNode(-1);
+        ListNode prev = dummy;
         ListNode curr = dummy;
         curr.next = head;
 
+        for (int i = 1; i <= n; i++) {
+            curr = curr.next;
+        }        
+
         while (curr.next != null) {
-            if (curr.next.val == val) {
-                curr.next = curr.next.next;
-            } else {
-                curr = curr.next;
-            }
+            curr = curr.next;
+            prev = prev.next;
         }
-        
+
+        prev.next = prev.next.next;
+
         return dummy.next;
-    }    
+    }
+    
 }

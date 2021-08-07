@@ -1,6 +1,6 @@
 package Top200;
 
-class DeleteNode {
+class GetKthFromEnd {
     class ListNode {
         int val;
         ListNode next;
@@ -17,19 +17,21 @@ class DeleteNode {
         }
     }
 
-    public ListNode deleteNode(ListNode head, int val) {
+    public ListNode getKthFromEnd(ListNode head, int k) {
         ListNode dummy = new ListNode(-1);
+        ListNode prev = dummy;
         ListNode curr = dummy;
         curr.next = head;
 
-        while (curr.next != null) {
-            if (curr.next.val == val) {
-                curr.next = curr.next.next;
-            } else {
-                curr = curr.next;
-            }
+        for (int i = 1; i <= k; i++) {
+            curr = curr.next;
         }
-        
-        return dummy.next;
-    }    
+
+        while (curr.next != null) {
+            curr = curr.next;
+            prev = prev.next;
+        }
+
+        return prev.next;
+    }
 }
