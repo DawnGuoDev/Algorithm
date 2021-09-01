@@ -14,14 +14,14 @@ func findMaxForm(strs []string, m int, n int) int {
 	}
 
 	dp := make([][]int, m+1)
-	for i := 0; i < m; i++ {
+	for i := 0; i < m+1; i++ {
 		dp[i] = make([]int, n+1)
 	}
 
 	for i := 0; i < strsLen; i++ {
 		for j := m; j >= counts0[i]; j-- {
 			for k := n; k >= counts1[i]; k-- {
-				dp[j][k] = int(math.Max(float64(dp[j][k]), float64(dp[j-counts0[i]][k-counts1[i]])))
+				dp[j][k] = int(math.Max(float64(dp[j][k]), float64(dp[j-counts0[i]][k-counts1[i]]+1)))
 			}
 		}
 	}
